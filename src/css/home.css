@@ -1,0 +1,48 @@
+.main{
+    width:100%;
+    height:86%;
+    display: flex;
+    justify-content: center;
+}
+.main .discuss{
+    position: relative;
+    top:30%;
+    text-align: center;
+    height:20%;
+    background-color: rgba(139, 69, 19, 0.8);
+    color: rgb(241, 240, 240);
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    padding:30px;
+    border: 0.1px solid white;
+    border-radius: 5px;
+    box-shadow:  0 0 30px rgb(114, 114, 148);
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s;
+}
+.main .discuss h1{
+    font-size: 40px;
+    font-style:italic;
+    font-weight: 100;
+    text-shadow: 0 0 30px white;
+}
+.main .discuss button{
+    margin:20px;
+    height:40px;
+    width:300px;
+    border:1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color:white;
+    box-shadow:  0 0 30px rgb(107, 107, 128);
+}
+.main .discuss button:hover{
+    background-color: white;
+    color:black;
+    border: 1px solid rgb(206, 198, 195);
+    box-shadow: 0 0 30px white;
+}
+.main .discuss.active{
+    opacity: 1;
+    transform: translateY(-100px);
+}

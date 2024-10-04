@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main{
+    width:100%;
+    height:80%;
+    display: flex;
+    justify-content: center;
+    
+}
+.main .content{
+    width:65%;
+    height:100%;
+    /* border:1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+
+
+}
+.main .content .about{
+    /* border:1px solid black; */
+    width:70%;
+    height:100%;
+    position: relative;
+    opacity:1;
+    transition: opacity 3s ;
+    box-sizing: border-box;
+    background-image: url("dots2.png");
+    padding:10px;
+}
+/* .main .content .about.active{
+    opacity: 1;
+    margin-top: -150px;
+} */
+.main .about h2{
+    font-size: 17px;
+    font-weight: 280;
+    color:orangered;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.main .about h1{
+    font-size: 30px;
+    font-weight: 200;
+    color:orangered;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.main .about p{
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    color:black;
+
+}
+.main .about .butt{
+    width:150px;
+    height:50px;
+    border:1px solid rgb(126, 123, 123);
+    background-color: transparent;
+    border-radius: none;
+    opacity:0;
+    transform:translateX(-200px);
+    transition: transform 2s,opacity 2s;
+
+
+}
+.main .about .butt.active{
+    opacity:1;
+    transform: translateX(0);
+}    
+.main .content .logo{
+    /* border:1px solid black; */
+    width:30%;
+    height:100%;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+@media(max-width:1150px){
+    html{
+        font-size: 14px;
+    }
+    .main{
+        padding: 20px;
+    }
+    .main .content{
+        width:100%;
+    }
+}
+@media(max-width:1000px){
+    html{
+        font-size: 14px;
+    }
+    .main .content{
+        flex-direction: column;
+    }
+    .main .content .about{
+        width:95%;
+    }
+}
+@media(max-width:800px){
+    html{
+        font-size: 13px;
+    }
+}
+@media(max-width:480px){
+    html{
+        font-size: 12px;
+    }
+    .main{
+        min-width: 30px;
+    }
+    .main .about h2{
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+    .main .about p{
+        font-size: 13px;
+    }
+}
